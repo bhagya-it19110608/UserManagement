@@ -28,16 +28,16 @@
 <br> Gender: 
 <input id="gender" name="gender" type="text" 
  class="form-control form-control-sm">
-<br>
+<br> Occupation:
 <input id="occupation" name="occupation" type="text" 
  class="form-control form-control-sm">
-<br>
+<br> Phone:
 <input id="phone" name="phone" type="text" 
  class="form-control form-control-sm">
-<br>
+<br> Username:
 <input id="username" name="username" type="text" 
  class="form-control form-control-sm">
-<br>
+<br>Password:
 <input id="password" name="password" type="text" 
  class="form-control form-control-sm">
 <br>

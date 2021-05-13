@@ -34,7 +34,7 @@ try
    {return "Error while connecting to the database for inserting."; } 
 
    // create a prepared statement
-   String query = " INSERT INTO users VALUES (?, ?, ?, ?, ?, ?, ?, ?)"; 
+   String query = " INSERT INTO users VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)"; 
 
    PreparedStatement preparedStmt = con.prepareStatement(query); 
 
