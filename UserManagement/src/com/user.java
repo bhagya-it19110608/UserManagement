@@ -20,7 +20,7 @@ public class user
 	 
 	    return con; 
 	 } 
-	public String insertUser (String firstName, String lastName, String email, String gender, String occupation, Integer phone, String username, String password) 
+	public String insertUser (String firstName, String lastName, String email, String gender, String occupation, String phone, String username, String password) 
 	{ 
 	  String output = ""; 
 
@@ -44,7 +44,7 @@ public class user
 	   preparedStmt.setString(4, email); 
 	   preparedStmt.setString(5, gender);
 	   preparedStmt.setString(6, occupation);
-	   preparedStmt.setInt(7, phone);
+	   preparedStmt.setString(7, phone);
 	   preparedStmt.setString(8, username);
 	   preparedStmt.setString(9, password);
 
@@ -93,7 +93,7 @@ public class user
 	      String email = rs.getString("email");
 	      String gender = rs.getString("gender");
 	      String occupation = rs.getString("occupation");
-	      Integer phone = rs.getInt("phone");
+	      String phone = rs.getString("phone");
 	      String username = rs.getString("username");
 	      String password = rs.getString("password");
 	      
@@ -130,7 +130,7 @@ public class user
 			return output; 
 		}
 
-	public String updateUser(Integer uId, String firstName, String lastName, String email, String gender, String occupation, Integer phone, String username, String password)
+	public String updateUser(Integer uId, String firstName, String lastName, String email, String gender, String occupation, String phone, String username, String password)
 	 { 
 	   
 		String output = ""; 
@@ -153,7 +153,7 @@ public class user
 	    preparedStmt.setString(3, email); 
 	    preparedStmt.setString(4, gender);
 	    preparedStmt.setString(5, occupation);
-	    preparedStmt.setInt(6, phone);
+	    preparedStmt.setString(6, phone);
 	    preparedStmt.setString(7, username);
 	    preparedStmt.setString(8, password);
 	    preparedStmt.setInt(9, uId); 
