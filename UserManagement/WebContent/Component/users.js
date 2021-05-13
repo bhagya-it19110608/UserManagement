@@ -43,7 +43,7 @@ $(document).ready(function()
 // UPDATE==========================================
 	$(document).on("click", ".btnUpdate", function(event)
 	{
-	$("#hiduIdSave").val($(this).data("uId"));
+	$("#hiduIdSave").val($(this).data("uid"));
 	$("#firstName").val($(this).closest("tr").find('td:eq(0)').text());
 	$("#lastName").val($(this).closest("tr").find('td:eq(1)').text());
 	$("#email").val($(this).closest("tr").find('td:eq(2)').text());
@@ -61,7 +61,7 @@ $(document).ready(function()
 	 { 
 	 url : "UserAPI", 
 	 type : "DELETE", 
-	 data : "uId=" + $(this).data("uId"),
+	 data : "uId=" + $(this).data("uid"),
 	 dataType : "text", 
 	 complete : function(response, status) 
 	 { 

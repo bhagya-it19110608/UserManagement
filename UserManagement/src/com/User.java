@@ -116,10 +116,10 @@ public String readUsers()
 		
    // buttons
 		 output += "<td><input name='btnUpdate' " 
-		 + " type='button' value='Update' class =' btnUpdate btn btn-secondary'data-uId='" + uId + "'></td>"
+		 + " type='button' value='Update' class =' btnUpdate btn btn-secondary'data-uid='" + uId + "'></td>"
 		 + "<td><form method='post' action='users.jsp'>"
 		 + "<input name='btnRemove' " 
-		 + " type='button' value='Remove' class='btnRemove btn btn-danger' data-uId='" + uId + "'>"
+		 + " type='button' value='Remove' class='btnRemove btn btn-danger' data-uid='" + uId + "'>"
 		 + "<input name='hiduIdDelete' type='hidden' " 
 		 + " value='" + uId + "'>" + "</form></td></tr>"; 
 		 } 
