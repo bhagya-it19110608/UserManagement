@@ -47,7 +47,7 @@ $(document).ready(function()
 	$("#firstName").val($(this).closest("tr").find('td:eq(0)').text());
 	$("#lastName").val($(this).closest("tr").find('td:eq(1)').text());
 	$("#email").val($(this).closest("tr").find('td:eq(2)').text());
-	$("#gendedr").val($(this).closest("tr").find('td:eq(3)').text());
+	$("#gender").val($(this).closest("tr").find('td:eq(3)').text());
 	$("#occupation").val($(this).closest("tr").find('td:eq(4)').text());
 	$("#phone").val($(this).closest("tr").find('td:eq(5)').text());
 	$("#username").val($(this).closest("tr").find('td:eq(6)').text());
