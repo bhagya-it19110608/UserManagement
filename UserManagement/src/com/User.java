@@ -135,7 +135,7 @@ public String readUsers()
 		return output; 
 	}
 
-public String updateUser(String uId, String firstName, String lastName, String email, String gender, String occupation, String phone, String username, String password)
+public String updateUser(String ID, String firstName, String lastName, String email, String gender, String occupation, String phone, String username, String password)
  { 
    
 	String output = ""; 
@@ -161,7 +161,7 @@ public String updateUser(String uId, String firstName, String lastName, String e
     preparedStmt.setString(6, phone);
     preparedStmt.setString(7, username);
     preparedStmt.setString(8, password);
-    preparedStmt.setInt(9, Integer.parseInt(uId)); 
+    preparedStmt.setInt(9, Integer.parseInt(ID)); 
  
     // execute the statement
     preparedStmt.execute(); 
