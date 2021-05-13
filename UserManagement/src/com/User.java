@@ -181,7 +181,7 @@ public String updateUser(String uId, String firstName, String lastName, String e
 	}
 
 
-public String deleteItem(String uId) 
+public String deleteUser(String uId) 
  { 
  String output = ""; 
  
@@ -208,7 +208,7 @@ public String deleteItem(String uId)
 
  	catch (Exception e) 
  	 { 
- 		output = "{\"status\":\"error\", \"data\": \"Error while deleting the user.\"}";  
+ 		output = "{\"status\":\"error\", \"data\": \"Error while Deleting the user.\"}";  
  	 System.err.println(e.getMessage()); 
  	 } 
  	return output; 
