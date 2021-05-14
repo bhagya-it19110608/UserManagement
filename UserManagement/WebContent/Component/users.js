@@ -77,12 +77,23 @@ function validateUserForm()
 	{
 	return "Insert First Name.";
 	}
+	// is string value
+	var tmpfName = $("#firstName").val().trim();
+	if ($.isNumeric(tmpfName))
+	{
+	return "First Name cannot be just a value.";
+	}
 	// Last Name
 	if ($("#lastName").val().trim() == "")
 	{
 	return "Insert Last Name.";
 	}
-
+	// is string value
+	var tmplName = $("#lastName").val().trim();
+	if ($.isNumeric(tmplName))
+	{
+	return "Last Name cannot be just a value.";
+	}
 	// Email-------------------------------
 	if ($("#email").val().trim() == "")
 	{
@@ -94,13 +105,23 @@ function validateUserForm()
 	{
 	return "Insert Gender.";
 	}
-	
+	// is string value
+	var tmpGender = $("#gender").val().trim();
+	if ($.isNumeric(tmpGender))
+	{
+	return "Gender cannot be just a value.";
+	}
 	// Occupation-------------------------------
 	if ($("#occupation").val().trim() == "")
 	{
 	return "Insert Occupation.";
 	}
-	
+	// is string value
+	var tmpGender = $("#gender").val().trim();
+	if ($.isNumeric(tmpGender))
+	{
+	return "Gender cannot be just a value.";
+	}
 	// Phone-------------------------------
 	if ($("#phone").val().trim() == "")
 	{
@@ -112,7 +133,6 @@ function validateUserForm()
 	{
 	return "Phone Number cannot contain letters.";
 	}
-	
 	// Username------------------------
 	if ($("#username").val().trim() == "")
 	{
